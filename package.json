@@ -6,11 +6,11 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "npm run astro:i18n && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write .",
-    "astro:i18n": "npx astro-i18next generate"
+    "astro:i18n": "npx astro-i18next generate && npm run format"
   },
   "dependencies": {
     "@astrojs/react": "^2.0.2",
