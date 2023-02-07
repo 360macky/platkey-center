@@ -138,13 +138,21 @@ function LandingSection() {
     <section className="min-h-screen bg-darkblue px-4 flex justify-center">
       <div className="flex flex-col gap-y-[16vh] py-[16vh] lg:pt-[2vh] lg:pb-[26vh]">
         <PlatKeyUI message={t('hero.message.big')} />
-        <div className="">
+        <div className="flex flex-col gap-y-[6vh]">
           <h2
             className="text-white font-bold text-4xl lg:text-6xl text-center lg:pt-24"
             id="getting-started"
           >
             {t('hero.message.howitworks')}
           </h2>
+        </div>
+        <div className="flex flex-col gap-y-8">
+          <p className="text-center text-3xl text-skyblue font-semibold">
+            {t('hero.description.01')}
+          </p>
+          <p className="text-center text-3xl text-skyblue font-semibold">
+            {t('hero.description.02')}
+          </p>
         </div>
         <div className={featureClassNames}>
           <h3 className="text-green font-semibold text-3xl lg:text-4xl text-center">

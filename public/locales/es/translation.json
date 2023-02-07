@@ -9,6 +9,8 @@
   "hero.message.howitworks": "¿Cómo funciona PlatKey?",
   "hero.message.available": "Compatible con",
   "hero.install.instruction": "Genial. Elige un navegador para instalar PlatKey",
+  "hero.description.01": "PlatKey es una herramienta para tu navegador que te ayuda a estudiar en Platzi",
+  "hero.description.02": "Cuando la instales, podrás usar las siguientes características:",
   "feature.shortcuts.title": "Completa los exámenes y quizzes sin usar el mouse",
   "feature.shortcuts.message": "Activa la opción Shortcuts.",
   "feature.shortcuts.instruction.01": "Presiona ",
