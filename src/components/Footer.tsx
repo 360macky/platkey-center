@@ -23,10 +23,7 @@ const Footer = () => {
         >
           {t('footer.contributions')}
         </a>
-        <a
-          className="text-green hover:underline"
-          href="./privacy"
-        >
+        <a className="text-green hover:underline" href="./privacy">
           {t('footer.privacy')}
         </a>
       </div>

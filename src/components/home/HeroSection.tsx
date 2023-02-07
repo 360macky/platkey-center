@@ -66,7 +66,7 @@ function HeroSection() {
               <div className="flex flex-col md:flex-row gap-x-4 w-full gap-y-4">
                 <a
                   target="_blank"
-                  className="bg-darkblue text-white cursor-pointer hover:bg-skyblue focus:ring-4 focus:outline-none focus:ring-skyblue/50 rounded-lg border border-skyblue px-5 py-2.5 hover:text-gray-900 focus:z-10 md:w-[50%] w-full"
+                  className="bg-darkblue text-white cursor-pointer hover:bg-skyblue/30 focus:ring-4 focus:outline-none focus:ring-skyblue/50 rounded-lg border border-skyblue px-5 py-2.5 focus:z-10 md:w-[50%] w-full transition"
                   href={CHROME_STORE_LINK}
                 >
                   <h2 className="text-xl font-bold">
@@ -79,7 +79,7 @@ function HeroSection() {
                 </a>
                 <a
                   target="_blank"
-                  className="bg-darkblue text-white cursor-pointer hover:bg-skyblue focus:ring-4 focus:outline-none focus:ring-skyblue/50 rounded-lg border border-skyblue px-5 py-2.5 hover:text-gray-900 focus:z-10 md:w-[50%] w-full"
+                  className="bg-darkblue text-white cursor-pointer hover:bg-skyblue/30 focus:ring-4 focus:outline-none focus:ring-skyblue/50 rounded-lg border border-skyblue px-5 py-2.5 focus:z-10 md:w-[50%] w-full transition"
                   href={APP_STORE_LINK}
                 >
                   <h2 className="text-xl font-bold">
@@ -125,7 +125,7 @@ function HeroSection() {
           </button>
           <a
             href="#getting-started"
-            className="border border-skyblue bg-darkblue text-skyblue text-2xl text-center rounded-lg py-2 lg:px-8 focus:ring-4 focus:outline-none"
+            className="border border-skyblue bg-darkblue text-skyblue text-2xl text-center rounded-lg py-2 lg:px-8 focus:ring-4 focus:outline-none hover:bg-skyblue/10 transition"
           >
             {t('hero.message.howitworks')}
           </a>

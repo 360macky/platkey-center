@@ -59,7 +59,7 @@ const PlatKeyUI = (props: PlatKeyUIProps) => {
         className="w-10/12 lg:w-[24rem] platkey-interface tracking-widest"
       />
       <div className="absolute flex flex-col justify-center items-center">
-        <h3 className="text-white font-bold	text-3xl lg:text-[7rem] drop-shadow-xl">
+        <h3 className="text-white font-bold	text-3xl md:text-[5rem] lg:text-[7rem] drop-shadow-xl">
           {props.message}
         </h3>
       </div>
