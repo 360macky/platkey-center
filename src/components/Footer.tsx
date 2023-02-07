@@ -4,7 +4,7 @@ import { t } from 'i18next';
 const Footer = () => {
   return (
     <footer className="bg-black p-4">
-      <div className="flex flex-row justify-center gap-x-[2rem]">
+      <div className="flex flex-row flex-wrap justify-center gap-x-[2rem] gap-y-[2rem]">
         <a
           className="text-green hover:underline"
           href="https://github.com/360macky/platkey"
