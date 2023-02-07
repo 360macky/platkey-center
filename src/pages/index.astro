@@ -1,8 +1,8 @@
 ---
 import { changeLanguage } from 'i18next';
-import { LanguageSelector } from 'astro-i18next/components';
 import Layout from '../layouts/Layout.astro';
-import Home from '../components/Home';
+import HeroSection from '../components/home/HeroSection';
+import LandingSection from '../components/home/LandingSection';
 import Footer from '../components/Footer';
 
 changeLanguage('es');
@@ -10,7 +10,8 @@ changeLanguage('es');
 
 <Layout title="PlatKey - Web Extension">
   <main>
-    <Home client:visible />
+    <HeroSection client:visible />
+    <LandingSection client:visible />
     <Footer />
   </main>
 </Layout>
