@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
@@ -115,6 +115,8 @@ const CHROME_STORE_LINK =
   'https://chrome.google.com/webstore/detail/platkey/bdjedpeffgjikndcihipemgdinpcmpcf';
 
 function Home() {
+  const { t } = useTranslation("translation");
+
   const searchAnimationOptions = {
     animationData: searchAnimation,
     loop: true,
