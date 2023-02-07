@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { t } from 'i18next';
+
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
 import { useLottie } from 'lottie-react';
@@ -224,7 +225,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="min-h-screen w-full bg-gradient-to-b from-black to-darkblue flex flex-col items-center gap-y-5 justify-center">
+      <section className="min-h-screen w-full bg-gradient-to-b from-black to-darkblue flex flex-col items-center gap-y-5 justify-center">
         <div className="flex flex-col items-center lg:flex-row lg:gap-x-8">
           <div>
             <img
@@ -285,9 +286,9 @@ function Home() {
             />
           </div>
         </div>
-      </div>
+      </section>
       {/*  */}
-      <div className="min-h-screen bg-darkblue px-4 flex justify-center">
+      {/* <div className="min-h-screen bg-darkblue px-4 flex justify-center">
         <div className="flex flex-col gap-y-[16vh] py-[16vh] lg:pt-[2vh] lg:pb-[26vh]">
           <PlatKeyUI message={t('hero.message.big')} />
           <div className="">
@@ -457,7 +458,7 @@ function Home() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
