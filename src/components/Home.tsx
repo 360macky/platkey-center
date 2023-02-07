@@ -455,7 +455,7 @@ function Home() {
             <img
               src={platkeyssh}
               alt={t('feature.mode.title') + ''}
-              className="rounded-lg lg:w-[60rem] border"
+              className="rounded-lg lg:w-[60rem] shadow-2xl shadow-black"
             />
           </div>
         </div>
