@@ -115,7 +115,7 @@ const CHROME_STORE_LINK =
   'https://chrome.google.com/webstore/detail/platkey/bdjedpeffgjikndcihipemgdinpcmpcf';
 
 function Home() {
-  const { t } = useTranslation("translation");
+  const { t } = useTranslation('translation');
 
   const searchAnimationOptions = {
     animationData: searchAnimation,
@@ -289,8 +289,7 @@ function Home() {
           </div>
         </div>
       </section>
-      {/*  */}
-      {/* <div className="min-h-screen bg-darkblue px-4 flex justify-center">
+      <section className="min-h-screen bg-darkblue px-4 flex justify-center">
         <div className="flex flex-col gap-y-[16vh] py-[16vh] lg:pt-[2vh] lg:pb-[26vh]">
           <PlatKeyUI message={t('hero.message.big')} />
           <div className="">
@@ -460,7 +459,7 @@ function Home() {
             />
           </div>
         </div>
-      </div> */}
+      </section>
     </div>
   );
 }
