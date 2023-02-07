@@ -1,53 +1,26 @@
-# Astro Starter Kit: Basics
+<p align="center">
+  <img
+    src=".github/icon.png"
+    align="center"
+    width="100"
+    alt="PlatKey Center"
+    title="PlatKey Center"
+  />
+  <h1 align="center">PlatKey Center</h1>
+</p>
 
-```
-npm create astro@latest -- --template basics
-```
+<p align="center">
+  🚀 Awesome features to your <a href="https://platzi.com">Platzi Exams</a> with this browser extension 🦉.</p>
+</p>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
+![Demo of PlatKey](./.github/preview.jpg)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Concept
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+PlatKey Center is the webpage where users can find all the information about the PlatKey extension, and where users can download the extension.
 
-## 🚀 Project Structure
+- [PlatKey Source Code](https://github.com/360macky/platkey)
 
-Inside of your Astro project, you'll see the following folders and files:
+This website is built with [Astro](https://astro.build/), using [Tailwind CSS](https://tailwindcss.com/) and [React](https://reactjs.org/).
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Some transitions are made with [Framer Motion](https://www.framer.com/motion/). Other animations are made with [Lottie](https://lottiefiles.com/).
