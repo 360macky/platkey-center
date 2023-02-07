@@ -23,6 +23,12 @@ const Footer = () => {
         >
           {t('footer.contributions')}
         </a>
+        <a
+          className="text-green hover:underline"
+          href="./privacy"
+        >
+          {t('footer.privacy')}
+        </a>
       </div>
       <div className="flex flex-row p-4 justify-center">
         <p className="text-white text-center max-w-[42rem]">
