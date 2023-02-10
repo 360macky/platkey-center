@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import classnames from 'classnames';
+import { motion } from 'framer-motion';
 import logo from '../../assets/platkey-logo.svg';
 import chrome from '../../assets/chrome.png';
 import edge from '../../assets/edge.png';
@@ -96,14 +97,23 @@ function HeroSection() {
       </div>
       <section className="min-h-screen w-full bg-gradient-to-b from-black to-darkblue flex flex-col items-center gap-y-5 justify-center">
         <div className="flex flex-col items-center lg:flex-row lg:gap-x-8">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, scale: 1.6 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+          >
             <img
               src={logo}
               alt="Platkey logo"
               className="w-auto transition active:translate-y-1 cursor-pointer platkey-logo"
             />
-          </div>
-          <div className="flex flex-col px-4">
+          </motion.div>
+          <motion.div
+            className="flex flex-col px-4"
+            initial={{ translateX: 20, opacity: 0 }}
+            whileInView={{ translateX: 0, opacity: 1 }}
+            viewport={{ once: true }}
+          >
             <h1 className="text-white text-4xl text-center font-bold lg:text-left lg:w-[32rem] lg:text-5xl">
               {t('hero.message.normal')}
               <span className="underline decoration-green decoration-3 underline-offset-4">
@@ -113,9 +123,15 @@ function HeroSection() {
             <h3 className="text-green text-4xl font-semibold lg:pt-3 text-center lg:text-left pt-4">
               PlatKey <span className="font-light hidden sm:inline">3.0</span>
             </h3>
-          </div>
+          </motion.div>
         </div>
-        <div className="flex flex-col w-full px-4 gap-y-4 lg:flex-row-reverse lg:gap-x-4 lg:justify-center lg:pt-8">
+        <motion.div
+          className="flex flex-col w-full px-4 gap-y-4 lg:flex-row-reverse lg:gap-x-4 lg:justify-center lg:pt-8"
+          initial={{ opacity: 0, translateY: 32 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.3 }}
+        >
           <button
             onClick={handleInstallModal}
             role="button"
@@ -129,7 +145,7 @@ function HeroSection() {
           >
             {t('hero.message.howitworks')}
           </a>
-        </div>
+        </motion.div>
         <div className="hidden lg:flex lg:flex-col items-center pt-6 gap-y-5">
           <p className="text-white text-xl">{t('hero.message.available')}</p>
           <div className="flex gap-x-8">
