@@ -16,6 +16,7 @@ const extensionVariant = {
   hidden: { opacity: 0, scale: 0 },
 };
 
+// TODO: Update this using the demo, maybe I don't need to declare a children prop
 type KeyProps = {
   children: React.ReactNode;
 };
@@ -224,9 +225,8 @@ function LandingSection() {
               </span>
               . {t('feature.greenboard.instruction.01')}
             </p>
+            {searchGreenboardElement.View}
           </div>
-
-          {searchGreenboardElement.View}
         </div>
         <div className={featureClassNames}>
           <h3 className="text-green font-semibold text-3xl lg:text-4xl text-center">
